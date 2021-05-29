@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">TestPractical</string>
+    <string name="android_practical">Android Practical</string>
+
+    <!--Create User Form Validation-->
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_select_gender">Please select gender</string>
+    <string name="please_select_status">Please select status</string>
+    <string name="please_enter_email">Please enter email id</string>
+    <string name="please_enter_valid_email">Please enter valid email ID.</string>
+
+    <!--Common Validation Strings-->
+    <string name="ok">Ok</string>
+    <string name="no_internet">Could not connect to the internet. Please check your network.</string>
+    <string name="connection_timeout">Connection timeout. Please try again later.</string>
+    <string name="something_went_wrong">Application is not working properly as per expected,please close it and again restart it.</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete this user?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--Create User Screen-->
+    <string name="create_an_user">Create an User</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_email_id">Enter email id</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_status">Select Status</string>
+    <string name="active">Active</string>
+    <string name="inactive">InActive</string>
+    <string name="create_user">Create User</string>
+
+    <!--Metadata Fragment UI-->
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="user_information">User Information</string>
+    <string name="gender">Gender:</string>
+    <string name="status">status:</string>
+    <string name="created_at">created_at:</string>
+    <string name="updated_at">updated_at:</string>
+    <string name="user_post_list">User Post List</string>
+    <string name="no_post_found">No post found</string>
+    <string name="please_select_user_to_show_the_metadata">Please select user to show the Metadata</string>
+
+    <!--User Fragment UI-->
+    <string name="no_user_found">No user found</string>
+    <string name="active_user">Active User</string>
+    <string name="asc_list">ASC List</string>
+    <string name="general_list">General List</string>
+
+    <!--Row Item Post-->
+    <string name="user_id">User ID:</string>
+    <string name="title">Title:</string>
+    <string name="body">Body:</string>
+
+</resources>

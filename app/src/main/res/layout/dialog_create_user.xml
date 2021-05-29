@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    android:id="@+id/layout_parkingInfoDialog"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/pink"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="@string/create_an_user"
+                    android:textStyle="bold"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_name"
+                    android:textStyle="normal"
+                    android:background="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/_13sdp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textStyle="normal"
+                android:background="@drawable/rounded_border"
+                android:padding="@dimen/_10sdp"
+                android:inputType="text"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/_13sdp"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_email_id"
+                    android:textStyle="normal"
+                    android:background="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_emailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    android:background="@drawable/rounded_border"
+                    android:padding="@dimen/_10sdp"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_gender"
+                    android:textStyle="normal"
+                    android:background="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/rounded_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:text="@string/male"/>
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:text="@string/female"/>
+
+                </RadioGroup>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_status"
+                    android:textStyle="normal"
+                    android:background="@null"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/_13sdp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_status"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/rounded_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:text="@string/active"/>
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rb_inactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/black"
+                        android:text="@string/inactive"/>
+                </RadioGroup>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_createUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="@string/create_user"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
